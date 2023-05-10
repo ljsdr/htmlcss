@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="tooltip_wrap">
+        <a class="tooltip">Tooltip
+            <span>
+                <b>pure CSS!</b>
+            </span>
+        </a>
+    </div>
+
+    <style>
+        div {
+            position: relative;
+        }
+
+        .tooltip {
+            border: 1px solid black;
+            display: block;
+            position: absolute;
+            width: 100px;
+            height: 30px;
+            left: 200px;
+            top: 300px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            background-color: lightgray;
+
+        }
+
+        span {
+            position: absolute;
+            top: -60px;
+            left: 0px;
+            display: block;
+            border: 1px solid black;
+            width: 100px;
+            height: 40px;
+            background-color: black;
+            border-radius: 10px;
+            visibility: hidden;
+        }
+
+        span>b {
+            display: block;
+            text-align: center;
+            box-sizing: border-box;
+            color: white;
+            padding:8px;
+        }
+
+        span::before {
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-top: 10px solid black;
+            position: absolute;
+            bottom: -20px;
+            left: 30px;
+        }
+
+        .tooltip:hover span {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .tooltip:hover{
+            box-shadow: 3px 3px;
+            transition:0.8s;
+        }
+
+    </style>
+</body>
+
+</html>

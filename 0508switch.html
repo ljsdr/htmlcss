@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/0508switch.css">
+</head>
+
+<body>
+    <h1>스위치 버튼 만들기</h1>
+    <div class="switch">
+        <input type="checkbox" id="sw1" class="input-on-off">
+        <label for="sw1" class="label-on-off">
+            <span class="marble"></span>
+            <span class="on">on</span>
+            <span class="off">off</span>
+        </label>
+    </div>
+
+
+    <h1>3단스위치만들기</h1>
+    <div class="switch2">
+        <input name="switch2" id="one" type="radio" checked>
+        <label for="one" class="switch_label">one</label>
+        <input name="switch2" id="two" type="radio" checked>
+        <label for="two" class="switch_label">two</label>
+        <input name="switch2" id="three" type="radio" checked>
+        <label for="three" class="switch_label">three</label>
+        <div class="switch_indicator"> </div>
+    </div>
+
+    <h2>이미지 좌우 및 수직반전 시키기</h2>
+
+    <img src="./imgs/nature2.png">
+    <style>
+        /*이미지좌우반전*/
+        img:hover {
+            transform: rotate(0deg);
+            transform: scaleX(-1);
+            /*원점을 지나는 수직축이 있는 대칭축을 의미*/
+            filter: FlipH;
+            transition: 1s;
+
+        }
+
+        img:active {
+            transform: rotate(0deg);
+            transform: scaleY(-1);
+            /*원점을 지나는 수직축이 있는 대칭축을 의미*/
+            filter: FlipV;
+            transition: 1s;
+
+        }
+    </style>
+    <hr>
+
+
+
+
+
+    <!--진행바 만들기-->
+    <div class="container">
+        <input type="radio" name="progress" id="one">
+        <label for="one" class="label">5%</label>
+        <input type="radio" name="progress" id="two">
+        <label for="two" class="label">25%</label>
+        <input type="radio" name="progress" id="three">
+        <label for="three" class="label">50%</label>
+        <input type="radio" name="progress" id="four">
+        <label for="four" class="label">75%</label>
+        <input type="radio" name="progress" id="five">
+        <label for="five" class="label">100%</label>
+        <div class="prograss">
+            <div class="prograss-bar">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--모달창만들기-->
+    <h1>모달창만들기</h1>
+    <a href="#modal" class="btn">모달창보이기</a>
+    <hr>
+    <div id="modal">
+        <div class="modal-body">
+            <img src="./imgs/night1.png">
+            <hr>
+            <a href="#">닫기</a>
+        </div>
+    </div>
+    <h2>모달팝업창이란?</h2>
+    <p>버튼이나 사진을 클릭했을 때 튀어나오는 화면.
+        modal popup 모달팝업이라고 하며, 라이트박스라고도 한다.
+        modal은 독점적이고 다른컨텐츠는 선택이 안된다. 팝업창은
+        화면 중앙에 위치하고, 일반적으로 배경색은 반투명 고정이
+        보통이다.
+    </p>
+
+</body>
+
+</html>

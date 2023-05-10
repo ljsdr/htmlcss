@@ -1,0 +1,106 @@
+0426
+https://github.com/knyatom/htmlcss/tree/master
+
+그림자속성
+벤더프리픽스
+그라디언트
+변환속성
+애니메이션속성
+반응형웹구현속성
+flex
+다단속성
+테이블관련속성
+-----------------------
+위치속성
+z-index
+overflow
+position
+float
+
+부트스트랩-css프레임워크
+사스sass,less
+
+
+1)
+2)
+3)
+
+도스명령어
+cui커맨드-> 키보드
+gui환경->마우스 인터페이스
+
+명령어
+윈도우+r+cmd->enter
+
+dir,
+윈도우->폴더
+cui->디렉토리
+
+cd\ -> c:\루트 디텍토리
+d: -> d드라이브로 이동
+cd-> change directory
+
+cd hong -> enter
+cd.. ->상위디렉토리로 이동
+cd. ->현재디렉토리
+d:\이름\htmlcss로 이동해서 code. 입력하고 엔터-> vs code가 실행
+
+overflow:visible/scroll/hiddenauto
+overflow-x:scroll
+overflow-y:scroll
+
+기본공식[3번째]
+자식박스에 position:absolute를 주면 부모에는 높이 height값을 줘야한다.
+
+[그림자속성]
+box-shadow: 오른쪽 아래 흐림색상
+text-shadow
+
+box-shadow:inset x y 흐림 퍼짐 색
+	    outset* 기본값
+내부그림자/외부그림자
+-------------------------------------------
+박스의 가로가운데 정렬
+박스의 세로가운데 정렬
+글자의 가로가운데 정렬
+글자의 세로가운데 정렬
+-------------------------------------------
+박스의 가로가운데 정렬: margin:auto;
+박스의 세로가운데 정렬:
+글자의 가로가운데 정렬: text-align:center
+글자의 세로가운데 정렬: 부모박스의 높이와 line-height를맞춘다.
+
+외부그림자 - outset
+내부그림자 - inset
+
+
+-------------------------0426-1----------------------------
+그라디언트
+css로 그라디언트
+
+css레이아웃방식
+1)float
+2)position
+3)flex
+4)grid
+
+원래는 디자인에서 크기는 8의배수로 가는것이 원칙
+----------------------0426-3-------------------------------
+세로내비게이션바
+
+display:none -> block;
+애니메이션 타임지정이 안된다.
+transition:1s;
+opacity:0 -> 100px;
+ol-> height:0해도 자식태그 li가 보인다. overflow:hidden;추가해준다.
+
+opacity랑 visibility같이써야한다
+
+ul-> relative추가
+ul>li-> relative삭제
+ol-> absolute-> relative 공간을 차지한다
+ol>li->relative->삭제
+dl -> absolute
+
+자식이 absolute이고 부모가 absolute이어도
+ 부모가 기준점이 될 수 있다.

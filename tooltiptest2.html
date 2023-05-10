@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <input type="text" placeholder="username">
+        <a href="#" class="tooltip">?
+            <span>
+                <b>username must consist of 29 symbols</b>
+            </span>
+        </a>
+    </div>
+    <style>
+        html,
+        body {
+            background-color: darkgrey;
+        }
+
+        input {
+            height: 20px;
+            width: 150px;
+        }
+
+        div {
+            position: relative;
+            left: 100px;
+            top: 100px;
+
+        }
+
+        .tooltip {
+            display: block;
+            border: 1px solid rgb(236, 87, 111);
+            width: 25px;
+            height: 25px;
+            text-align: center;
+            background-color: rgb(236, 87, 111);
+            text-decoration: none;
+            color: white;
+            border-radius: 50px;
+            position: relative;
+            bottom: -7px;
+
+        }
+
+        span {
+            position: absolute;
+            border: 1px solid rgb(236, 87, 111);
+            background-color: rgb(236, 87, 111);
+            width: 200px;
+            height: 60px;
+            line-height: 30px;
+            border-radius: 10px;
+            color: white;
+            top:37px;
+            left: -5px;
+            visibility:hidden;
+        }
+
+        span::before {
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-bottom: 10px solid rgb(236, 87, 111);
+            position: absolute;
+            left: 7px;
+            bottom: 60px;
+        }
+
+        a:hover span {
+            visibility: visible;
+            transition: 1s;
+            box-shadow: 3px 3px;
+
+        }
+
+        a:hover {
+            box-shadow: 3px 3px;
+            transition: 1s;
+        }
+    </style>
+
+</body>
+
+</html>

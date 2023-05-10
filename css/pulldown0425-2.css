@@ -1,0 +1,84 @@
+/* 1. a태그는 블럭처리한다
+2. ul>li메인메뉴는 float처리한다.
+3.ul 메인박스는 float해제한다.
+4.서브메뉴 ol은 숨김처리한다.
+5.메인메뉴li에 hover효과로 서브메뉴를 보이게한다.
+6.position 처리한다.(기회의도에 따라 다르다.)
+7.동적인효과 UI기능을 개선 */
+
+ul a{display: block; padding:10px}
+ul{ width:600px; margin:auto;}
+ul>li{float:left;}
+/* ul{overflow: hidden;} */
+ol{
+/* display: none; */
+position:absolute;      /*일반적으로 absolute를 쓸 경우 기준이 되는 부모의 position은 relative이다.
+bottom: 50px 값을 주면 '자신의 기준이 되는 부모를 기준으로 가장 밑에서 50px 간격을 줘라' 라는 뜻이다.*/
+visibility: hidden;
+opacity:0;
+} /*display:none은 아예안보이게,absolute 속성값은 브라우저가 문서의 흐름과 상관없이 (요소를 수직으로 쭉 놓을지, 수평으로 쭉 놓을지 등을 결정하는 것) left, right, top, bottom 속성값을 이용하여 요소를 위치시키는 속성값입니다. 이때 기준이 되는 위치는 가장 가까운 부모 요소 혹은 조상 요소 중 position 속성이 relative인 요소입니다.*/
+ul>li:hover{background: orange;}
+ol>li{height:0;}
+ul>li:hover>ol>li{height:41px; transition:0.5s;}
+ul>li:hover>ol{display:block;
+visibility: visible;
+opacity:1;
+transition:1s;}
+ol>li{background: tomato;}
+ul>li{position:relative;}/*top: 50px을 하면 '지금위치에서 50px만큼 위로 공간을 줘라'라는 뜻이다.
+left: 30px을 하면 '지금위치에서 30px만큼 왼쪽으로 공간을 줘라'라는 뜻이다.*/
+/* ul{height: 80px;} */
+ul:after{content:'';display:block; clear:both;}
+ol{width:100%;}
+ol>li:hover{background-color: lightgray}
+
+/* UI기능 개선작업 */
+
+ol>li>a::before{
+    content:'';
+    width:0px; height:100%;
+    width:block;
+    background: blue;
+    position:absolute;
+    left:0; top:0;
+}
+
+ol>li>a{position: relative;}
+ol>li>a:hover:before{width:5px; transition:0.2s;}
+
+/* 메인메뉴에 hover효과주기 */
+ul>li>a{
+
+}
+
+ul>li>a:after{    
+    content:"";
+    display:block;
+    width:0;
+    position: absolute;
+    left:50%; bottom:0;
+    height:5px; background:blue;
+    /* margin:auto; margin auto를 주면 가운데부터시작 */
+}
+
+ul>li>a:hover:after{
+    width:100%;
+    transition:0.5s;
+    left:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

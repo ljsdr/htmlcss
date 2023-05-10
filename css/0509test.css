@@ -1,0 +1,52 @@
+#mainmenu {
+    border-radius: 10px;
+    background: tomato;
+    width: 200px;
+}
+
+ul li a {
+    display: block;
+    color: white;
+    font-weight: bold;
+}
+
+ul li {
+    padding: 10px;
+
+}
+
+div {
+    display: none;
+    background: rgb(201, 62, 38);
+    border-radius: 10px;
+
+}
+
+div:target {
+    display: block;
+    padding-left: 10px;
+
+}
+
+div:target p a:hover {
+    color: lightcoral;
+
+
+}
+
+ul li:hover {
+    display: block;
+    background: tan;
+}
+
+
+ul li>a::before {
+    content: url(../imgs/arrow-down.png);
+    display: block;
+    position: absolute;
+    left: 170px;
+}
+
+div p {
+    padding: 8px;
+}

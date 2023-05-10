@@ -1,0 +1,52 @@
+body, html {background:beige}
+img{width:90px; height:90px;}
+header a{font-size: 30px;}
+
+nav ul{
+    display:block;
+    display:flex;
+    list-style:none;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+}
+
+nav>ul>li{
+    flex:1; 
+    padding:10px;
+}
+
+ul>li>a{
+    color:black;
+    text-decoration-line:none;
+    text-align:center; 
+}
+
+h4{font-size: 20px;}
+aside>ul{background:rgb(78, 77, 77);
+display:block;
+list-style:none;
+width:200px;
+}
+
+aside ul li{height:30px;
+border-bottom:1px solid black;}
+aside ul li a{color:white;}
+aside#left{float:left;}
+
+aside#right{padding:0px;
+margin-left:10px;
+width:200px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

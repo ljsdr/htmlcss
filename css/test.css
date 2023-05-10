@@ -1,0 +1,42 @@
+header{text-align:center;}
+h1{text-align:center;
+margin:40px;}
+section{width:1000px; margin:auto;}
+
+[class=box]{
+    float:left;
+    margin:20px;
+    width:200px;
+    box-sizing:border-box;
+}
+
+h2{
+    margin:10px;
+    padding:10px;
+    border-bottom:1px solid lightgray;
+}
+
+a{
+    margin:10px;
+    padding:10px;
+    line-height:2;
+}
+dl dd::before{
+    content:'­­-';
+}
+dl dd a{
+    color:gray;
+}
+ul>li>a{
+    font-weight: bold;
+}
+
+ul>li:hover{
+    font-size:large;
+}
+dl dd a:hover{
+    color:lightcoral;
+}
+    
+
+

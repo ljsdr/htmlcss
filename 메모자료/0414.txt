@@ -1,0 +1,148 @@
+HTML 태그위주로 수업
+<table>
+<tr>
+<th>제목필드</th>
+<td>데이터</td>
+</tr>
+</table>
+웹사이트의 전체의 layout 잡는용도
+표용도→ 게시판의 글목록은 테이블로 제작
+tr→ table now
+th→ table header
+td→ table data
+table태그에 자식태그로 들어가는 태그들
+thead tr th td
+tbody tfoot
+caption
+colgroup
+col
+caption 태그는 보통 숨김처리를 한다.
+tbody→ table body
+th→ table header필드명
+굵은 긁자, 가운데 정렬
+td→ 보통글자, 왼쪽정렬
+table태그에 들어가는 속성들
+cellspacing
+cellpadding
+rowspan
+colspan
+scope
+width,height
+valign align
+align=left/right/center
+cellspacing=글자와 셀사이의 간격
+cellpadding=셀과 셀사이의 간격
+bgcolor
+background
+테이블의 가로크기, 세로크기
+세로크기는 신경쓰지않는다
+가로크기가 중요하다
+width, height
+셀의 가로크기, 세로크기
+width, height
+colgroup
+col
+border-spacing
+border-collapse
+scope 속성
+웹접근성을 위한 속성
+장애인용
+시각장애인, 한손만있는사람
+청각장애인
+색대비, 스크린리더가 친절하게 정보를 알려주게함.
+7:1 이상AAA
+4.5:1 이상 AA
+3:1 이상 A 글자크기가 18px이상 색대비검사
+emmet 기능 → html wrap
+extnetion
+lorem→ enter⇒alt+z
+줄바꾸기/안바꾸기
+수직정렬
+valign=”top/middle,bottom”
+html-imgs → 그림
+        -multi→ 동영상, 음악파일
+전통적방식 - 레거시방식
+legacy
+embed, object
+html5에 새로추가된 태그
+video audio
+비디오나 오디오파일은 자동재생을 막아놨다. 음소거 muted를 추가해야 자동재생이 실행된다. 브라우저마다 지원되는 파일형식이 다릅니다.
+mp4,ogg,webm(구글)
+type속성을 추가하면 브라우저가 타입을 알수있다. 추가하지 않으면 브라우저가 무슨타입인지 분석한다
+mp3,ogg,wav
+iframe - insert frame
+audio나 video태그에 source 태그를 여러개 넣은 이유는 브라우져마다 지원되는 형식이 달라서 똑같은 영상일 경우 파일형식을 달리해서 크로싱브라우징을 높인것이다
+영상의 개수는 video태그의 개수
+video 태그가 2개면 영상이 2개
+embed
+iframe태그 실습
+구글정책
+insert frame
+문서에 또다른 문서를 삽입하는 기능
+영상재생용으로 요즘 많이 사용한다.
+홈페이지에 페이스북화면삽입
+embed, object는 구버전
+HTML에 새로 추가된 태그 → video,audio
+알FTP → File transfer protocol
+파일전송 프로토콜
+마이닷홈→ 상세보기 → 라디오버튼체크→ 상세보기
+기본도메인정보
+자기아이디.dothome.co.kr
+웹서버아이디 복사
+알드라이브실행→ 추가→ 호스트→ 내 ip주소→ 아이디/비번
+닷홈아이디/비번→연결
+시맨틱태그
+form
+input
+textarea
+label
+fieldset
+legend
+select
+option
+method=get/post
+fieldset 액자틀
+<input type=”text”>
+input→tab키나 엔터
+label
+placeholder → 가이드텍트스 안내글자
+label태그 사용법
+1)명시적방법:for속성사용
+2)묵시적방법:label로 전체를 감싼다.
+input 태그에 type=”text”
+size
+placeholder
+max-length 최대글자
+min-length 최소글자
+get방식은 쿼리스트링이 나온다
+post방식은 쿼리스트링이 안나온다.
+required 필수입력
+input:radio
+라디오버튼은 name으로 그루핑한다.
+checked 기본체크상태로 변환
+type=”email”
+selected
+http://validator.w3.org/  →유효성검사
+속성이 빨간색이면 웹표준이 아니고 css로 처리해야함
+
+input태그에 들어가는 type
+text/password/checkbox/radio/date/color/email
+/number/range/search/tel/url/file/
+
+-------------------------------
+textarea태그
+cols
+rows
+--------------------------------
+file 전송시 enctype
+x-www-form-urlencode
+
+multipart/form-data
+파일이나 이미지보낼때 사용
+
+text/plain : 일반텍스트 인코딩없이 전송
+--------------------------------
+
+<button>전송</button>
+
+label 에 for과 input에 id 값 같아야 눌림

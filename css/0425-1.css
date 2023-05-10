@@ -1,0 +1,60 @@
+.borderimg{
+    border:10px solid transparent; /*transparent투명*/
+    padding:10px;
+    border-image: url('../imgs/border1.png') 30 round;
+    margin:30px;
+}
+
+.borderimg:hover{
+    border-image: url('../imgs/border1.png') 30 repeat;
+}
+
+.borderimg:active{
+    border-image: url('../imgs/border1.png') 30 space;
+}
+
+.borderimg2{
+    border:10px solid transparent; /*transparent투명*/
+    padding:10px;
+    border-image: url('../imgs/border2.png') 25 stretch;
+    margin:30px;
+    /*border-radius: 30px;*/
+}
+
+.borderimg3{
+    border:5px solid transparent; /*transparent투명*/
+    padding:10px;
+    border-image: url('../imgs/border4.png') 21 space;
+    margin:30px;
+    height:20px;
+    /*border-radius: 30px;*/
+}  
+
+.borderimg4{
+    border:20px solid transparent; /*transparent투명*/
+    padding:20px;
+    border-image: url('../imgs/cat1.png') 20 round;
+    margin:30px;
+    /*border-radius: 30px;*/
+}  
+
+.borderimg5{
+    border:10px solid transparent;
+    padding:10px;
+    border-image: url(../imgs/border1.png) 20 round;
+    margin:40px;
+}
+
+ul{margin:30px;}
+ul>li{list-style-type: decimal;
+list-style-position: outside;/*inside : 문단 안쪽에 놓습니다.
+outside : 문단 바깥쪽에 놓습니다.*/
+list-style-position: inside;
+list-style-image: url('../imgs/icon1.gif');
+/* list-style:none;
+list-style: upper-alpha inside; */
+}
+
+ul>li:hover{
+    list-style-image: url('../imgs/icon2.gif');
+}

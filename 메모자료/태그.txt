@@ -1,0 +1,337 @@
+태그의 기본입력방식
+
+시작태그 ~~ 끝태그
+
+<h1>텍스트 <h1>
+
+h1태그
+
+자바스크립트 h1 tag node
+
+수미쌍관법칙
+
+단독으로 사용되는 태그
+
+<br><hr><input><img>
+
+h1~h6 heading
+
+p→ pagrapraph  문단
+
+a→ anchor
+
+href→ hyperlink reference
+
+a→ enter
+
+pre→ 입력한 그대로 나오는 태그
+
+공백→ &nbsp;
+
+```jsx
+<b>굵은 글자</b> <i>이탤릭체 기울임꼴</i>
+     <strong>굵은 글자 강조표시</strong>
+     <em>기울임강조표시</em>
+b i 시각적요소
+strong 의미적요소 강조
+
+글자관련 태그 a,b,strong,span,em,i
+```
+
+<hr> 수평선 넣기
+
+<sub>아래첨자
+
+<sup>윗첨자
+
+<code> 코드강조태그
+
+목록태그 unordered list 순서없는 목록태그<ul>
+
+list <li>
+
+ordered list <ol> 숫자목록
+
+```html
+      <ul>
+        <li></li>
+        <li></li>
+     </ul>
+      <ol>
+        <li></li>
+        <li></li>
+     </ol>
+```
+
+ul>li*3{에스프레소}
+
+```html
+     <ul type="disc">
+        <li>에스프레소</li>
+        <li type="circle">아메리카노</li>
+     </ul>
+    <ul type="circle">
+        <li>에스프레소</li>
+        <li>아메리카노</li>
+    </ul>
+    <ul type="square">
+        <li>에스프레소</li>
+        <li>아메리카노</li>
+```
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/05954fd1-2ad0-49ac-926d-5f44be19cc94/Untitled.png)
+
+앞부분리스트 모양바뀜
+
+<ol>은 숫자 12345~
+
+ol
+
+type- 숫자/알파벳대소/로마자 대소
+
+1/A/i/a/I
+
+```html
+<ol type="A">
+        <li>에스프레소</li>
+        <li>아메리카노</li>
+        <li>아메리카노</li>
+     </ol>
+    <ol type="I">
+        <li>에스프레소</li>
+        <li>아메리카노</li>
+        <li>아메리카노</li>
+    </ol>
+    <ol type="i">
+        <li>에스프레소</li>
+        <li>아메리카노</li>
+        <li>아메리카노</li>
+    </ol>
+    <ol type="a">
+        <li>에스프레소</li>
+        <li>아메리카노</li>
+        <li>아메리카노</li>
+    <ol type="1" start="3">
+        <li>에스프레소</li>
+        <li>아메리카노</li>
+        <li>아메리카노</li>
+    </ol>
+
+```
+
+img태그
+
+<img src=”” width=”” height=”” alt=””>
+
+alt→ 이미지표시되지 못할때 대체 텍스트
+
+웹접근성을 위해서 반드시 이미지에 대한 설명문구를 넣어야 한다.
+
+안넣으면 웹표준검사와 웹접근성 검사에서 걸림.
+
+src → 이미지 파일 이름
+
+width → 넓이
+
+height → 높이
+
+<img src="./imgs/dog1.PNG" alt="강아지" width="150" height="200" title="동물사진">
+<img src="./imgs/dog2.PNG" width="50%" style="border:5px solid red"/>
+
+제목리스트를 아이콘이미지로 바꾸기
+
+```html
+<ol type="i" style="list-style-image: url(./imgs/icon1.gif);">
+        <li>에스프레소</li>
+        <li>아메리카노</li>
+        <li>아메리카노</li>
+```
+
+인라인, 블럭 요소
+
+<div>
+
+<div style="width: 200px; height:100px; border:2px solid red"> 박스 1 </div>
+
+박스그룹핑
+
+<span>
+
+가로세로 크기지정이 안된다
+
+font-size:20px로 키운다
+
+<span style="border:1px solid; font-size: 20px">글자2</span>
+
+글자그룹핑
+
+a태그
+
+```html
+<a href="../sports/lg.html">lg로가기</a>
+    <a href="javascript:history.back()"> 뒤로가기 </a>
+    <a href="javascript:history.forward()"> 앞으로가기 </a>
+```
+
+href=”#아이디”   →위아래로가기
+
+이미지로 검색하는 태그
+
+```html
+<a href="http://www.google.co.kr/search?q=고양이">
+        고양이로 구글검색하는 링크걸기
+```
+
+테이블태그
+
+웹사이트의 전체의 layout태그
+
+table태그에 자식태그로 들어가는 태그들
+
+thead tr th td
+
+tbody tfoot
+
+caption
+
+colgroup
+
+col
+
+caption 태그는 보통 숨김처리를 한다.
+
+<table>
+
+<tr>
+
+<th>제목필드</th>
+
+<td>데이터</td>
+
+</tr>
+
+</table>
+
+tbody→ table body
+
+th→ table header필드명
+
+굵은 긁자, 가운데 정렬
+
+td→ 보통글자, 왼쪽정렬
+
+table태그에 들어가는 속성들
+
+cellspacing
+
+cellpadding
+
+rowspan
+
+colspan
+
+scope
+
+width,height
+
+valign 
+
+위아래
+
+valign=”top/middle,bottom”
+
+양옆
+
+align=left/right/center
+
+cellspacing=글자와 셀사이의 간격
+
+cellpadding=셀과 셀사이의 간격
+
+bgcolor
+
+background
+
+테이블의 가로크기, 세로크기
+
+세로크기는 신경쓰지않는다
+
+가로크기가 중요하다
+
+width, height
+
+셀의 가로크기, 세로크기
+
+width, height
+
+colgroup
+
+col
+
+이미지 동영상태그
+
+embed, object
+
+embed, object는 구버전
+
+HTML에 새로 추가된 태그 → video,audio
+
+html5에 새로추가된 태그
+
+video audio
+
+비디오나 오디오파일은 자동재생을 막아놨다. 음소거 muted를 추가해야 자동재생이 실행된다.
+
+iframe - insert frame
+
+영상의 개수는 video태그의 개수
+
+video 태그가 2개면 영상이 2개
+
+allowfullscreen 전체화면 가능
+
+시맨틱태그
+
+form
+
+input
+
+textarea
+
+label
+
+fieldset
+
+legend
+
+select
+
+option
+
+method=get/post
+
+fieldset
+
+<input type=”text”>
+
+input→tab키나 엔터
+
+label
+
+placeholder → 가이드텍트스 안내글자
+
+label태그 사용법
+
+1)명시적방법:for속성사용
+
+2)묵시적방법:label로 전체를 감싼다.
+
+input 태그에 type=”text”
+
+size
+
+placeholder
+
+max-length 최대글자
+
+min-length 최소글자

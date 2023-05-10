@@ -1,0 +1,145 @@
+-----------------------5.1------------------------
+https://flexboxfroggy.com/#ko
+
+
+justify-content
+align-items
+flex-direction
+order
+align-self
+flex-wrap
+flex-flow
+align-content
+
+
+justify-content속성
+flex-start: 요소들을 컨테이너의 왼쪽으로 정렬합니다.
+flex-end: 요소들을 컨테이너의 오른쪽으로 정렬합니다.
+center: 요소들을 컨테이너의 가운데로 정렬합니다.
+space-between: 요소들 사이에 동일한 간격을 둡니다.
+space-around: 요소들 주위에 동일한 간격을 둡니다.
+
+align-items속성
+flex-start: 요소들을 컨테이너의 꼭대기로 정렬합니다.
+flex-end: 요소들을 컨테이너의 바닥으로 정렬합니다.
+center: 요소들을 컨테이너의 세로선 상의 가운데로 정렬합니다.
+baseline: 요소들을 컨테이너의 시작 위치에 정렬합니다.
+stretch: 요소들을 컨테이너에 맞도록 늘립니다.
+
+flex-direction속성
+row: 요소들을 텍스트의 방향과 동일하게 정렬합니다.
+row-reverse: 요소들을 텍스트의 반대 방향으로 정렬합니다.
+column: 요소들을 위에서 아래로 정렬합니다.
+column-reverse: 요소들을 아래에서 위로 정렬합니다.
+
+order속성
+order의 기본 값은 0이며, 양수나 음수로 바꿀 수 있습니다.
+(1,-1)
+
+align-self
+ 개별 요소에 적용할 수 있는 또 다른 속성입니다.
+ 이 속성은 align-items가 사용하는 값들을 인자로 받으며,
+ 그 값들은 지정한 요소에만 적용됩니다.
+
+flex-wrap속성
+nowrap: 모든 요소들을 한 줄에 정렬합니다.
+wrap: 요소들을 여러 줄에 걸쳐 정렬합니다.
+wrap-reverse: 요소들을 여러 줄에 걸쳐 반대로 정렬합니다.
+
+flex-flow
+flex-direction과 flex-wrap이 자주 같이 사용되기 때문에,
+ flex-flow가 이를 대신할 수 있습니다. 
+이 속성은 공백문자를 이용하여 두 속성의 값들을 인자로 받습니다.
+
+align-content속성
+flex-start: 여러 줄들을 컨테이너의 꼭대기에 정렬합니다.
+flex-end: 여러 줄들을 컨테이너의 바닥에 정렬합니다.
+center: 여러 줄들을 세로선 상의 가운데에 정렬합니다.
+space-between: 여러 줄들 사이에 동일한 간격을 둡니다.
+space-around: 여러 줄들 주위에 동일한 간격을 둡니다.
+stretch: 여러 줄들을 컨테이너에 맞도록 늘립니다.
+
+---------------------------0501sitemap--------------------------
+고정형:px로
+유동형->%,rem,em,vw
+반응형->@media 쿼리 해상도별로 구분
+3단,2단,모바일은 1단
+
+.row:afer{
+    content:''; display:block; clear;both;
+}
+float해제되고 자식박스가 잘리지않게 처리
+------------------0501--------------------------------------
+css속성
+transition
+transform
+animation
+table
+column
+
+transition-duration: 시간
+transition-delay: 지연속성
+transition-property: 속성
+transition-timing-function: 변형함수
+ease-in/ease-out/ease-in-out/ease
+linear
+점점빠르게/점점느리게
+
+transition:
+
+background: orange url(./imgs/coupang.png); no-repeat left top scroll / cover;
+							     /size
+
+animation속성
+animation-name:
+animation-duration:
+animation-delay:
+animation-teration-count:
+animation-play-state:
+animation-timing-function:
+animation-fill-mode:
+animation-direction:
+
+animation:
+
+키프레임개념
+0~100px이동하고, 200px까지
+위로이동해라.
+
+@keyframes 이름{
+    0{}
+    50%{}
+    100%{}
+}
+
+애니메이션
+------------------------------------------
+이미지 슬라이드
+1)자동슬라이드
+2)좌우버튼슬라이드
+3)롤링배너버튼슬라이드
+4)터치슬라이드
+-------------------------------------------
+제이쿼리 swiper.js 라이브러리
+ 	sticky.bxslider
+
+풀 width슬라이드, 크기정해진슬라이드
+
+canvas
+  panel
+    img
+   버튼
+-------------------------0501-1swiper.html--------------------------
+swiper.html
+swiper.com
+
+1)CDN
+2)다운로드
+3)설치방식
+
+swiper에 가서 자동슬라이드 옵션찾아서 설정하기
+아래쪽 버튼동작하는거 찾아오기
+
+api를 3party library
+1part-> 원소유자, 2part->투자자
+3part-> 제3자

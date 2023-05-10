@@ -1,0 +1,21 @@
+.box{width:150px; height:50px;
+border:1px solid; margin:5px;
+background-color:gold;}
+
+.display{display:none;}  /*공간자체가 사라짐*/
+.visible{visibility: hidden;} /*공간을 사라지지않음*/
+.opacity{opacity:0.5;} /*투명도*/
+.text{text-indent:-9999px;}/*글자를 화면밖으로 보내버림.*/
+.pos{
+    position:absolute;  /*화면에서 사라지지만 리더기가 읽음*/
+    left:-9999px;
+}
+.width{
+    position: absolute;
+    width:1px;
+    height:1px;
+    clip: rect(0 0 0 0);
+    overflow:hidden;
+    background-image: url('../imgs/cat1.png');
+}
+.font{font-size:0;}

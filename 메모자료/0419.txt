@@ -1,0 +1,198 @@
+4월19일
+
+[디자인]
+1달
+HTML 태그
+CSS
+부트스트랩-CSS프레임워크
+---------------------------
+자바스크립트
+
+CSS목차
+CSS선택자
+CSS속성들
+
+link:css
+
+noto sans-구글
+noboto
+
+폰트에 대한 세부속성들
+기울임글꼴
+font-style:italic/normal
+font-varient:small-caps - 작은 대문자
+                      normal*  *기본값
+font-weight:bold; 굵은글자
+font-size:20px;    글자크기
+line-height:줄간격
+font-family:"궁서체", serif; 글꼴
+
+통합속성
+font:style variant weight size/line-height family
+font:italic small-caps bold 20px/1.5 "궁서체";
+font:italic 12px/24px "돋음";
+
+bold->400 보통글자 700이상굵은글자
+
+폰트명은 영문은 따옴표없이
+serif, Arial,
+공백이 있으면 따옴표처리
+"Times new Roman"
+한글글꼴도 따옴표처리
+
+line-height:2
+글자가 1 이면 줄크기는 글자의 2배
+가독성->1.6~1.8
+
+font통합
+
+폰트
+시스템폰트
+웹폰트 --★
+
+구글웹폰트
+https://fonts.google.com/
+
+라이브러리는 사용방법
+1)다운로드해서 연결   fontface
+2)CDN방식
+   인터넷주소로 링크걸기
+콘텐츠 전송 네트워크(CDN)                               <-링크태그방식
+
+css외부 파일 연결방식
+1)link태그를 head태그 중간에 삽입해서
+src로 연결하는 방법
+2) @import url('파일명');
+head태그에 style태그 안에 삽입하거나 css파일 최상단에 삽입한다.
+
+@font
+@media
+@import
+@animation
+at-rules
+
+fonts 다운로드해서 사용하기
+ttf
+otf
+woff
+
+나눔고딕
+다음체 네이버체
+
+preconnect
+preload
+crossorigin 외부도메인허용
+
+css선택자 수업
+
+코드편집기
+eclipse-jsp
+intellij-자바
+
+속성선택자
+-기본속성  [속성명=값]{ }
+-문자열속성
+
+class="aaa bbb ccc"
+.aaa{}
+.bbb{}
+.ccc{}
+
+<p class="aaa" class="bbb">이건 안됨
+<p class="aaa bbb">정상표준상태
+
+문자열속성선택자
+~=물결=>공백
+|= 바 => 하이픈
+^=   => 시작
+$=   =>끝
+*=   =>포함
+
+-webkit-
+vendor prefix
+브라우져 전용 접두사
+
+웹킷은 크롬브라우저 엔진이름이다
+엣지등이 채택하고있다.
+
+text-stroke 만 적으면 스타일이 적용이 안되고-webkit-text-stroke
+를 붙여야한다. 그외에 
+-ms-   인터넷익스프로러
+-o-     오페라
+-moz-  파이어폭스
+-webkit- 크롬,엣지
+
+css상속
+css우선순위(구체성)
+
+css상속
+부모로부터 물려받는것
+부모태그로부터 자식태그로 전파되는 속성
+
+1)자동상속
+글꼴, 배경색,글자색등이 자동상속
+2)수동상속
+그외 border,margin,padding,opacity등
+자동상속되지않는다.
+
+무조건 하나위 상속받는다.
+
+body태그에 글자색을 지정하면 그밑에 태그들은 글자색이 변경된다.
+다만 a태그는 글자색이 변경되지않는다.
+a태그는 글자색은 a태그를 바로선택하거나 
+a{colored:red; color:inherit;}
+a태그도 글자색을 상속을 받겠다.
+
+css우선순위
+CSS가 중복될 경우 마지막 코드가 적용된다.
+
+dt->dt->2점
+dt-> 1점
+dt.aaa ->11점
+dt#aaa ->101wja
+dt#aaa.aaa-> 111점
+복합선택자
+dt.aaa#aaa{}
+
+인라인스타일 -> 1000점
+!important -> 만점
+
+:after
+:before
+:first-letter
+:first-line
+:selection 마우스로 드래그한상태
+selection만 콜론두개
+
+
+1em=M의 글자크기 16px
+
+transition은 어떤 속성이 변경되면 시간설정을
+줘서 애니메이션효과를 줄 수 있다.
+1s;1초,
+500ms, 0.5초
+:hover에 주면 호버에만 시간이 적용되고
+hover와 out모두 적용할려면 원본에 transition을 적용한다.
+
+자식박스인li태그가 float 처리되면
+부모박스인 ul태그 높이까지 깨진다.
+부모박스의 ul의
+nav>ul:after{
+   "content:";
+    display: block;
+    clear:both;
+}
+를 주면
+
+ 
+
+
+
+
+
+
+
+
+
+
+

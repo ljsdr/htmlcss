@@ -1,0 +1,106 @@
+label{ /*햄버거*/
+    border:1px solid black;
+    width:20px;
+    display: block;
+    margin:20px;
+    cursor:pointer; 
+    /*마우스손모양*/
+}
+
+/* label span{
+    display:block;
+    height: 3px;
+    background: blue;
+    border-radius:2px;
+    margin:3px auto;
+    width:90%;
+} */
+/* 박스제어하기 */
+ul{
+    display:none;   /*체크박스시 안보이게하기위해서*/
+}
+
+input:checked+ul{
+    display:block;
+}
+
+ul>li>a:before{
+    content:'\1F60A';
+}
+
+
+/*서브메뉴디자인 및 구현*/
+ul{
+    position: relative;/*모든메뉴가 위에서 나온다.*/
+    width:250px;
+}
+
+ul>li {
+    background:green;
+    font-weight:bold;
+    padding:5px;
+    text-indent: 10px;
+}
+
+ul>li:not(:last-child){
+    box-shadow: 1px 1px 1px 1px white;
+
+}
+
+ul>li>a{
+    display:block; /*글자외에 빈공간(박스부분)도 클릭된다.*/
+    color: white !important;
+}
+
+div.sub{ 
+    position:absolute;
+    left:100%;
+    top:0;
+}
+
+ul>li:hover{background: lightgreen;}
+
+ul>li:hover>a{
+    text-shadow: 1px 1px black;
+}
+
+div.sub{
+    display:none;
+    width:500px;
+    border: 1px solid red;
+    height:100%;
+
+}
+
+ul>li:hover>div.sub{
+    width:500px;
+    display:block;
+    display: flex;
+    /* float는 마진을 줘야함. */
+    /* display:flex는 자식에 flex를 줘야한다. */
+
+}
+
+/* 서브메뉴디자인 */
+
+div.sub section{
+    float: left;
+    flex: 1;
+}
+
+section>ol{
+    font-size: 0.9em;
+    font-weight: normal;
+    color: gray;
+}
+
+section>h3{
+    font-size: 1em;
+    font-weight: normal;
+}
+
+section{
+    height: 100%; border-right: 1px solid black;
+}
+
+

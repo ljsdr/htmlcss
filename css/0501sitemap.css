@@ -1,0 +1,232 @@
+
+
+/*데스크탑 버전*/
+@media screen and (min-width:1024px){
+    
+h1{width:900px; margin:auto;
+background-color:red;
+color:white;
+letter-spacing:3px;
+padding:10px;
+text-align:center;
+text-transform: capitalize;
+border: 5px solid gray;
+border-radius:5px;
+font-family: serif; /*폰트*/
+text-shadow: 1px 1px black;}
+
+section{width:900px; margin:auto;}
+
+[class=box]{
+    float:left;
+    border:3px solid black;
+    width:250px;
+    margin:10px;
+    padding:10px;
+    line-height:2;
+    height:300px;
+    box-sizing:border-box;
+    
+}
+
+[class=row]{
+    overflow:hidden;
+    margin:10px 10px;
+    /* height:350px; */
+    padding-left:50px;
+}
+
+h2{
+    text-align:center;
+    border-bottom:2px solid red;
+    width:90%;
+    margin-bottom:20px;
+}
+
+ul>li{
+    text-indent:10px;
+    position:relative;
+}
+
+ul>li::before{
+    content:'\1F664';
+    position:absolute;
+    left:-25px; top:0;
+}
+
+ul>li:hover{
+    background: lightgray;
+    cursor:pointer;
+    text-indent:40px;
+    transition:1s;
+}
+
+.box:hover{
+    transform:scale(1.1);
+    transition:1s;
+    box-shadow: 5px 5px 10px;
+}
+
+.row{overflow:visible;}
+
+}
+/*데스크탑 버전 끝*/
+
+/*테블릿버전*/
+@media (min-width:768px) and (max-width:1023px) {
+
+    
+h1{width:100%; margin:auto;
+background-color:red;
+color:white;
+letter-spacing:3px;
+padding:10px;
+text-align:center;
+text-transform: capitalize;
+border: 5px solid gray;
+border-radius:5px;
+font-family: serif; /*폰트*/
+text-shadow: 1px 1px black;}
+
+section{width:900px; margin:auto; position:relative;}
+
+[class=box]{
+    /* float:left; */
+    position:absolute;
+    border:3px solid black;
+    width:28%;
+    margin:10px;
+    padding:10px;
+    line-height:2;
+    height:300px;
+    box-sizing:border-box;
+    
+}
+
+[class=row]{
+    overflow:hidden;
+    margin:10px 10px;
+    /* height:350px; */
+    padding-left:50px;
+}
+
+h2{
+    text-align:center;
+    border-bottom:2px solid red;
+    width:90%;
+    margin-bottom:20px;
+}
+
+ul>li{
+    text-indent:10px;
+    position:relative;
+}
+
+ul>li::before{
+    content:'\1F664';
+    position:absolute;
+    left:-25px; top:0;
+}
+
+ul>li:hover{
+    background: lightgray;
+    cursor:pointer;
+    text-indent:40px;
+    transition:1s;
+}
+
+.box:hover{
+    transform:scale(1.1);
+    transition:1s;
+    box-shadow: 5px 5px 10px;
+}
+
+.row{overflow:visible;}
+
+section{height:600px;}
+#toefl{ background: gold;}
+#toeic{left:250px; top:150px; background: silver;}
+#english{left:400px; top:250px; background: pink;}
+#japanese{left:550px; top:100px; background: tan;}
+#academy{left:700px; top:0px; background: ivory;}
+.box:hover{z-index: 1;}
+
+}
+/*테블릿끝*/
+
+/*모바일*/
+@media screen and (max-width:767px){
+    /*1단*/
+
+    h1{margin:20px auto;
+background-color:red;
+color:white;
+letter-spacing:10px;
+padding:10px;
+text-align:center;
+text-transform: capitalize;
+border: 5px solid gray;
+border-radius:5px;
+font-family: serif; /*폰트*/
+text-shadow: 1px 1px black;}
+
+section{margin:auto;}
+
+[class=box]{
+
+    border:3px solid black;
+    margin:10px;
+    padding:10px;
+    line-height:2;
+    box-sizing:border-box;
+    
+}
+
+[class=row]{
+    margin:10px auto;
+}
+
+h2{
+    text-align:center;
+    border-bottom:2px solid red;
+    width:90%;
+    margin:auto;
+    margin-bottom:20px;
+}
+
+ul>li{
+    text-indent:25px;
+    position:relative;
+}
+
+ul>li::before{
+    content:'\1F664';
+    position:absolute;
+    left:-25px; top:0;
+}
+
+ul>li:hover{
+    background: lightgray;
+    cursor:pointer;
+    text-indent:40px;
+    transition:1s;
+}
+
+.box:hover{
+    transform:scale(1.1);
+    transition:1s;
+    box-shadow: 5px 5px 10px;
+}
+
+.row{overflow:visible;}
+
+section{height:600px;}
+#toefl{ background: gold;}
+#toeic{left:250px; top:150px; background: silver;}
+#english{left:400px; top:250px; background: pink;}
+#japanese{left:550px; top:100px; background: tan;}
+#academy{left:60%; top:0px; background: ivory;}
+.box:hover{z-index: 1;}
+
+
+}

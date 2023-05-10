@@ -1,0 +1,181 @@
+4/21	
+
+배경관련속성
+
+background-color
+background-image
+background-position
+background-attachment
+background-repeat
+
+background:red url('image') no-repeat fixed lef top;
+
+background-size*
+
+background-origin
+background-clip
+
+rgba(225,0,0,0.2)
+알파-투명도
+red,blue,green,alpha
+
+/* box-sizing: border-box; 테두리와 패딩이 width에 포함된다. */
+
+background-repeat:repeat*기본값
+repeat-x/repeat-y/no-repeat
+가로반복 세로반복  무반복(이미지하나만 보임)
+
+background-position: left top;
+left right top bottom center 100px 50%
+
+background-attachment:scroll*/ fixed;
+배경이미지는 테두리 영역까지 걸쳐있다
+fixed는 화면내에서 고정
+
+
+background-origin:border-box*
+padding-box
+content-box
+
+background: color url() left top scroll repeat;
+순서없이 적는다.
+
+ir기법
+IR(Image Replacement) 기법은 이미지를 볼 수 없는 사용자에게 
+적절한 대체 텍스트를 제공하는 것으로 이는 웹 접근성 준수를
+위한 스크린 리더 사용자뿐아니라 검색 엔진의 효과적인 
+내용 수집을 위해서도 필요하다.
+
+디자인을 위해서 이미지처리를하고
+텍스트로 정보를 제공해준다. 글자태그를 이용해서 
+스크린리더가 읽게해준다.
+글자는 숨김처리해야한다.
+
+background-size: 100px 200px 100%
+		cover,contain
+cover:이미지를 최대한 크게 보여준다.
+	이미지가 짤릴수가 있다.
+contain: 이미지를 최대한 크게 보여주되
+	잘리는 부분이 없고 동일한 비율유지
+	단지 빈 여백이 생길수 있다.
+
+스프라이트구현+ir기법
+
+숨김처리
+display:none;
+visibility:hidden;
+스크린리더는 인식을 못한다,
+
+1)text-indent:-9999px;
+들여쓰기로 글자를 멀리보낸다
+박스속성에만 줄수있다.
+
+2)숨김처리해놓고
+aria-label="텍스트"
+aria-labelledby="설명문"
+
+span{ text-indent:10px; ---xxxxxx}
+<p>대한민국<p>
+span을 박스처리하면 된다.
+
+bgd -> enter
+
+이미지파일 하나는 전송하면 이미지 헤더파일+이미지소스파일이
+전송된다.
+파일1=헤더정보+이미지파일
+이미지5개면 5개의 헤더정보와
+ 5개의 이미지 파일이 전송된다.
+
+스프라이트 이미지로 처리하면 
+헤더파일1+이미지파일1만전송된다.
+
+언어:문법->기초예제->활용예제->응용예제
+syntax, 언어의 구조파악
+독해,작문
+처음에는 클론코딩위주로 공부->복붙
+파일로정리, 블로그
+
+교재보고할때 책은 2년전-> 프로그램이 업데이트
+기술이 나오면 그전기술이 불편하기 때문이다
+한가지기술을 익히면 그것만쓰려고하면 안됌
+
+css emmet
+bgi
+bgz
+bga
+fz
+fs
+
+display:flex      
+부모박스에 flex처리하고
+display:flex;
+자식박스에 flex:1하면 자동으로 넓이가 균등하게 처리된다.
+
+:root{변수들을 정의
+width:-50px;
+}
+html{ }
+
+
+div{
+--width:-50px; // 지역변수
+}
+
+
+
+글자관련속성
+text-align:center/left/right/justify
+text-transform:uppercase/lowercase capitalize
+text-decoration:underline/overline
+line-rought/none
+text:indent:들여쓰기
+letter-spacing:글자간격
+word-spacing:단어간격
+white-space:줄바꾸기
+word-wrap:줄바꾸기
+text-shadow
+text-stroke
+
+text-decoration: overline underline
+line thought dotted red;
+
+underline solid black;
+solid dotted dashed double
+ridge groove, inset, outset
+
+white-space:줄바꾸기
+
+
+1)공백이 있으면 줄이 바뀐다.
+2)공백이 없으면 줄이 안바뀐다.
+3)공백이 있어도 줄이 안바뀐다.
+white-space: wrap;
+4)공백이 없어도 줄이 바뀐다. 
+break:break-all
+
+
+
+
+/* 한줄말줄임표 넣기 */
+white-space: nowrap;
+text-overflow:ellipsis; /*생략기호*/
+overflow:hidden;
+
+여러줄 말줄임표넣기
+display:-webkit-box;
+-webkit-line-clamp:3;
+-webkit-box-orient: vertical;
+height:60px;
+
+
+text-overflow:ellipsis;/clip;
+글자가 넘치면 : 생략기호/자르다
+
+letter-spacing: 글자간격
+word-spacing:단어간격
+test-shadow
+text-stroke
+
+
+
+

@@ -1,0 +1,158 @@
+first child
+fitst of type
+nth child
+box-sizing
+background-attachment
+aria-labelledby
+
+ul::after{content:''; display:block; clear:both;}  애프터 비포
+text-indent
+calc
+
+css에서 ul>li>a
+ul li a차이
+
+display:block
+
+
+
+ul>li:nth-child(1){background-position:0 0;}
+ul>li:nth-child(2){background-position:-116px 0;}
+ul>li:nth-child(3){background-position: calc(-116px*2) 0;}
+ul>li:nth-child(4){background-position: calc(-116px*3) 0;}
+ul>li:nth-child(4){background-position: calc(-116px*4) 0;}
+뒤에 숫자가 의미하는것 가로세로
+
+
+
+
+
+
+
+
+
+
+
+
+선택자 ex ul li a,,,,,,,,,,ul>li>a 
+->ex)한단계아래의 a만 선택 or 밑에 있는 a전부다
+
+overflow hidden
+-> 박스 넘치면 숨김처리
+
+float left    float해제
+-> float left하면 왼쪽으로 박스들이 차례로 일자로 모임
+그러나 clear:both하면 적용한 박스는 일자로 모이지 않고 밑에 그대로 있음
+
+position absolute relative
+->relative부모 박스안에서 absolute자식박스가 움직인다.
+
+display inline-block
+->인라인블럭은 한줄에 여러개의 엘리먼트를 정확히 원하는 너비만큼 배치할수있기때문에 레이아웃에 활용할 수 있다.
+
+display flex 1이런거 뒤에 숫자의미
+ -><flex-grow>, <flex-shrink>, <flex-basis>값
+grow요소가 비율에맞게 채워진다
+자식박스가 부모박스보다커질경우 작아진다.
+basis flex기본 사이즈를 지정하는 속성
+
+ul>li:not
+->~가 아니다 제외시키는것
+
+article태그
+-> 기사같은 것들 영역을 article 태그는 section과 다르게
+ 독립적으로 존재할 수 있으며 재사용 할 수 있다.(다른영역에서)
+즉 article이 좀 더 구체적이다.
+주로 블로그글, 포럼, 뉴스 기사 등을 article로 묶음
+
+justify태그
+->justify -content ( 가로축 - 중심축 ) 가로 축을 기준으로 좌우에 대한 정렬을 관장 합니다.
+속성 나열은 아래와 같습니다.
+
+align-items ( 세로축 - 교차축 )
+->세로 축을 기준으로 정렬을 하게 됩니다
+
+wrap태그
+->감싸주는것 꼭필요하진않음
+
+flex-direction:row;
+->display flex가 부모요소에 있을때 사용가능. 정렬해주는역활을함. row가로정렬 column세로정렬
+  justify-content: space-between;
+
+->justify-content 속성은 플렉스 요소의 수평 방향 정렬 방식을 설정합니다.
+이 속성은 다음과 같은 속성값을 가질 수 있습니다.
+
+align-content:center;
+->align-items는 수직축의 라인을 기준으로 아이템들이 정렬이 되고,
+align-content는 수직축의 라인을 기준으로 (두 줄 이상 일 때만) 라인 자체가 정렬이 된다.
+
+target태그
+->링크태그 클릭으로 링크를 오픈할때 어디에서 오픈할지 정하는속성
+
+text-align태그
+->문단정렬방식을 정한느 속성
+left right center justify
+
+box-sizing
+->box-sizing은 박스의 크기를 어떤 것을 기준으로
+ 계산할지를 정하는 속성이다.
+content-box : 콘텐트 영역을 기준으로 크기를 정한다.
+border-box : 테두리를 기준으로 크기를 정한다.
+initial : 기본값으로 설정한다.
+inherit : 부모 요소의 속성값을 상속받는다.
+
+text-indent
+->들여쓰기와 내어쓰기는 text-indent 속성으로 만듭니다.
+값이 양수이면 들여쓰기, 값이 음수이면 내어쓰기가 됩니다.
+기본값은 0입니다.
+내어쓰기를 할 때는 왼쪽에 여백을 적절히 줍니다.
+
+float 해제
+->
+keyframes
+->
+canvas
+->
+
+input[type=radio]:nth-of-type(1):checked~.buttons>label:nth-of-type(1)
+text-indent
+->
+
+id class부여하는것
+->
+
+z-index
+->눈으로 부터 보이는 층 z-index:1; 2; 3; 4; 5; 먼저보이게하는것
+position 이랑 같이사용
+
+border-collapse
+->separate : 표(table)의 테두리와 셀(td)의 테두리 사이에 간격을 둡니다.
+collapse : 표(table)의 테두리와 셀(td)의 테두리 사이의 간격을 없앱니다. 겹치는 부분은 한 줄로 나타냅니다.
+initial : 기본값으로 설정합니다.
+inherit : 부모 요소의 속성값을 상속받습니다.
+속성값이 separate일 때, 간격의 크기는 border-spacing 속성으로 정합니다
+
+ul li a
+>는 지계자손만 포함하고 자식자손에 동일한 선택자가 있으면 적용 x, 공백은 전부다 
+absolute
+부모박스를 기준으로 움직임.
+relative
+-> html body기준으로 전체적인 틀을 위치로이동
+box-sizing
+->content-box는 텍스트를 기준으로 크기가 정해지고 borde-box는 경계를 기준으로 함
+grid
+->gird template-colums/rows: 150px 1fr
+		가로  세로 배치 첫번째박스는150픽셀, 나머지박스는나머지공간차지라는의미
+
+visibility:hidden
+display:none 차이
+transform태그
+애니,이미지관련태그
+perspective
+선택자> nth-child nth of type
+position속성
+
+0426네비게이션바공부 모바일아이콘
+스프라이트 다음네비
+0501 transition
+

@@ -1,0 +1,204 @@
+h1~h6 heading
+
+p→ pagrapraph  문단
+
+a→ anchor
+
+href→ hyperlink reference
+
+a→ enter
+
+pre→ 입력한 그대로 나오는 태그
+
+태그속성
+
+태그마다 다른 속성이 있고, 전체태그에 공통으로 들어가는 속성이 있다.
+
+일반속성
+
+전역속성(글로벌속성)
+
+class, id, style, title
+
+<h1 href=””>
+
+class와 id는 식별자이다. 
+
+var a = 10
+
+var a = 200
+
+CSS
+
+css 속성:값
+
+color:red;
+
+;세미콜론은 하나만 있으면 생략가능
+
+color:red; background:blue;
+
+;구분자
+
+“”쌍따옴표
+
+구문오류→ syntax 에러→ 오타
+
+red blue green gold silver pink tomato chocolate cyan gray
+
+font태그→ 비표준태그
+
+태그는 정보를 표시하는 역활→ 디자인용xxxx
+
+pre태그는 br태그에 비해 잘 안쓰임 pre는 게시판에 주로 사용
+
+젠코딩 또는 emmet 연습
+
+h1*3
+
+h1*3{welcome}
+
+h1*3{welcome-$}
+
+[]대괄호
+
+{}중괄호
+
+()소괄호
+
+$→ 순번
+
+*→ 곱하기 갯수
+
+h$*6{heading $}
+
+ctrl+alt 키를 아래방향키로 내리고 입력→한꺼번에 입력
+
+ctrl+d → dddddd
+
+ctrl+/
+
+블록요소
+
+인라인요소
+
+< > “ &
+
+< → &lt;
+
+< →&gt;
+
+<HTML>
+
+&lt;HTML&gt; 으로 표기
+
+유니코드 검색
+
+이모지 → 윈도우+;
+
+목록기호(리스트태그)
+
+type - disc/circle/square
+
+현재작업폴더는 html폴더이다
+
+html———-css→cssvkdlf
+
+index.html   imgs→ 이미지파일
+
+                    js→ 자바스크립트파일
+
+                    font → 폰트파일
+
+정보구조, 폴더구조
+
+프로젝트명 shop-css
+
+아이콘천국
+
+[https://icon](https://icon).hompys.com/
+
+아이콘이미지→ gif파일 아이콘용
+
+png 웹용
+
+jpg 사진용
+
+gif 아이콘용
+
+./ → 현재폴더 의미
+
+../ →상위폴더 의미
+
+화면 줄 바꿈 alt z
+
+border=”5” 테두리가 나오지만 웹표준방식이 아니라서 css로 테두리를 줘야함
+
+박스요소, 글자
+
+<p>문단
+
+<h1>제목
+
+<div>그냥박스
+
+그룹핑, division
+
+박스모델
+
+블럭요소모델
+
+가로세로 크기
+
+width, height, margin 외부여백
+
+글자들이 감싸는 태그는 span
+
+대표적인 인라인태그
+
+가로세로 크기지정이 안된다
+
+font-size:20px로 키운다
+
+div와 span은 그룹핑용도이다.
+
+a태그 링크
+
+target=”self”
+
+             new 한번만 새창
+
+            _blank 계속 새창
+
+kbs
+
+sbs
+
+mbc
+
+```
+<a href="../sports/lg.html">lg로가기</a>
+    <a href="javascript:history.back()"> 뒤로가기 </a>
+    <a href="javascript:history.forward()"> 앞으로가기 </a>
+```
+
+http://www.daum.net
+
+javascript:alert(”hello”)
+
+내부파일로 링크걸기
+
+현재페이지에서 위아래로 링크를 건다.
+
+특정항목으로 화면이 이동한다.
+
+href=”#아이디”   아이디 #bottom
+
+특정 아이디 있는 곳으로 화면 이동
+
+이미지 링크걸기
+
+```html
+<a href="http://www.google.co.kr/search?q=고양이">
+        고양이로 구글검색하는 링크걸기
+```

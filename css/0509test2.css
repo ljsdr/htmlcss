@@ -1,0 +1,74 @@
+#wrap {
+    width: 1000px;
+    margin: auto;
+}
+
+.logo>h1 {
+    position: relative;
+    top: -80px;
+    left: 200px;
+}
+
+.logo {
+    float: left;
+}
+
+.main_menu {
+    float: right;
+}
+
+
+nav {
+    margin: 80px;
+}
+
+ul>li {
+    float: left;
+    padding: 13px;
+
+}
+
+section {
+    text-align: center;
+    line-height: 100px;
+}
+
+section>h2 {
+    position: relative;
+    background: rgb(128, 128, 128, 0.5);
+    top: -270px;
+    left: 350px;
+    width: 300px;
+    height: 100px;
+    border-radius: 15px;
+    color: white;
+}
+h2{
+    position:relative;
+    left:170px;
+}
+table {
+    line-height:30px;
+}
+
+table tr:nth-child(2) {
+    background: lightgrey;
+}
+
+table tr:nth-child(4) {
+    background: lightgrey;
+}
+
+#content{position:relative;
+top:-100px;}
+
+#content{
+    width:500px;
+}
+
+.partner{
+    position:relative;
+    width:500px;
+    left:550px;
+    top:-190px;
+}

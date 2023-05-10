@@ -1,0 +1,77 @@
+.box{width:100px; height:100px;
+background-color: red;
+position:absolute} /*<-박스가 움직이게 하기위해 선언한다.left:10px; top:50px; 자식박스 absolute */
+
+.box:nth-of-type(1){width:100px; height:100px;
+background-color: red;}
+
+.box:nth-of-type(2){
+background-color: orange;
+left:50px; top:100px;}
+
+.box:nth-of-type(3){
+background-color: blue;
+left:100px; top:150px;}
+/* 마지막에 입력한 요소가 맨앞(층)으로 올라간다. */
+
+.box:nth-of-type(1):hover{
+    z-index:1;
+} /*겹쳐져있을때 숫자가 높으면 위로 올라간다.*/
+
+.box:nth-of-type(2):hover{
+    z-index:2;
+}
+
+.wrap{
+    border:1px solid red;
+    position:relative;   /*부모박스 relative height 높이선언해야함.*/
+    width:500px; height:200px;
+    overflow: auto;
+    overflow-x:scroll;
+    overflow-y:hidden;
+}
+
+.wrap:hover{
+    overflow:visible;
+}
+
+.wrap:active{
+    overflow: scroll;
+}
+
+.shadow{
+    width:400px; height:100px;/*글자세로가운데정렬할떄 기준높이*/
+    border:1px solid gray;
+    box-shadow: 5px 5px 5px black;
+    border-radius:20px;
+    text-align:center; /*글자의 가로가운데정렬*/
+    line-height:100px; /*글자의 세로가운데정렬*/
+}
+
+.shadow:hover{box-shadow: inset 5px 5px 5px 1px black;}
+
+.shadow:active{box-shadow:5px 5px 5px 1px black,10px 10px 5px 5px orange, 15px 15px 20px 5px red;}
+
+.shadow{font-size:2em;
+text-shadow:2px 2px 2px red;}
+
+.shadow:hover{
+text-shadow:2px 2px 2px green,
+            2px -5px 2px orange;}
+
+.shadow:active{
+text-shadow:2px 2px 2px gold,
+            -2px -5px -3px cyan,
+            -5px -3px 2px gray;
+        background-color: black;
+    color:white;}
+
+.sample{
+border-style: solid;
+border-width: 10px 26px 11px 18px;
+-moz-border-image: url(../imgs/cat1.png) 10 10 9 9 repeat repeat;
+-webkit-border-image: url(../imgs/cat1.png) 10 10 9 9 repeat repeat;
+-o-border-image: url(../imgs/cat1.png) 10 10 9 9 repeat repeat;
+border-image: url(../imgs/cat1.png) 10 10 9 9 repeat repeat;
+height:200px;
+}

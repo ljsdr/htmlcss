@@ -1,0 +1,239 @@
+4.17 월
+HTML 태그실습
+1)글자관련태그
+2)링크태그
+3)목록관련태그
+ -순서있는태그
+ -순서없는태그
+ -용어정의형목록태그
+4)테이블태그
+5)폼태그
+6)시맨틱태그
+7)블록레벨태그
+-div/span
+8)기타태그
+9) 멀티미디어관련태그
+ing,video,audio,embed,object
+------------------------
+1)글자관련태그
+ - 제목,문단
+b,i
+small, big
+sub,sup
+ins,del
+ruby, q, blockquote
+abbr
+acronym
+mark
+summary, address, cite
+xmp,pre, center, u, s, strike
+details, datalist, address
+marquee
+
+ins-> 삽입,밑줄
+del-> 삭제,취소선
+
+한글입숨->검색
+ruby->윗주글자, 외국어음표기, 한자음표기
+ruby>rt + rp괄호
+ruby text
+
+abbr, acronym
+
+
+<ruby>
+        <span>大韓民國</span>
+        <rp>(</rp>
+        <rt>대한민국</rt>
+        <rp>)</rp>
+</ruby>
+루비태그가 지원안되는 브라우저를 위해사용
+大韓民國(대한민국)
+
+can i use
+abbr, 축약어,두문자어
+acronym,비표준
+
+q인용구
+<q cite="강남피부">피부</q>
+quote
+blockquote
+
+ins,del,u,strike(비표준),s
+
+움직이는 글자-<marquee>
+형광글자<mark>
+center 비표준
+xmp, pre
+
+xmp = pre+특수문자 (표준방식)
+
+ul태그에 div나 p 같은 다른태그는 못들어간다
+li태그에는 대체로 가능하다.
+
+a태그에서 특정목적지로 이동하는 기능
+id방식, name 속성방식
+<h3 id="top">목적지</h3>
+<a href="#top">출발지</a>
+name으로 목적지설정은  a태그만 가능하다
+id는 모든태그 사용가능하다.
+
+구글지도로 링크걸기
+
+지도 api 사용
+카카오맵 지도 api 사용하기
+https://apis.map.kakao.com/web/guide/
+
+bb80efc4996a40a59504070b73eddcc2
+
+3)목록태그
+-순서있는태그
+-순서없는태그
+-용어정의형목록태그
+
+ul>li*5>a[href=#]{menu$}
+ctrl+spacebar -> 코드힌트
+
+디자인은 숨기는것이다
+
+용어정의형목록태그
+dl>dt+dd
+
+부모>자식1+자식2
+>상하관계 + 형제관계
+
+definition list
+definition term
+definition destription
+
+프로토타입 기반언어
+
+
+img태그
+ placeholder
+ dummyimage
+이미지가 없을때 일단 레이아웃을 위해서 자리배치만 한다.
+
+form태그
+input태그
+outout태그
+
+    <form onclick="result.value=input.value">
+        <input type="range" name="input" value="100">
+        <output name="result"></output><b>점</b>
+        </input>
+    </form>
+
+onclick을 클릭할때 실행해라.
+
+폼태그에 들어가는 속성들
+type=hidden
+placeholder 안내문구
+readonly 읽기전용
+autofocus 커서자동포커스
+required 필수입력
+min ->number 나 range의 최소
+max
+step
+value
+name
+minlength 최소입력글자
+maxlength 최대입력글자
+autocomplete 자동완성기능활성화
+pattern - 정규표현식, 유효성검사
+enable/disabled
+multiple 리스트박스
+
+style="overflow: hidden;"
+스크롤바 숨기는 CSS 코드
+
+이메일주소
+aaa@daum.net, bbb@daum.net
+동보메일
+
+
+글자에서 ctrl+/를 누르면 주석처리 안될경우 
+한글입력모드가 달라져서 그렇다.
+ctrl+shift 누른상태에서 shift 키 한번 더 누르기.
+모드변경은 shift 키로 변경
+
+pattern - 정규표현식, 유효성검사
+pattern='\d{3}-\d{3,4}-\d{4}'
+\아무글자
+d숫자
+
+정규표현식 패턴
+
+1) 숫자만 : ^[0-9]*$
+
+2) 영문자만 : ^[a-zA-Z]*$
+
+3) 한글만 : ^[가-힣]*$
+
+4) 영어 & 숫자만 : ^[a-zA-Z0-9]*$
+
+5) E-Mail : ^[a-zA-Z0-9]+@[a-zA-Z0-9]+$
+
+6) 휴대폰 : ^01(?:0|1|[6-9]) - (?:\d{3}|\d{4}) - \d{4}$
+
+7) 일반전화 : ^\d{2,3} - \d{3,4} - \d{4}$
+
+8) 주민등록번호 : \d{6} \- [1-4]\d{6}
+
+9) IP 주소 : ([0-9]{1,3}) \. ([0-9]{1,3}) \. ([0-9]{1,3}) \. ([0-9]{1,3})
+
+
+비밀번호 특수문자와 숫자포함
+정규표현식 비밀번호관련 검색
+비밀번호설정해주는것
+
+1)비밀번호 특수문자와 숫자포함
+2)url검사
+3)이메일 검사- 도메일주소 포함하는 것
+4)한글영문숫자 포함하기
+5)ip주소 v4, v6 : ip주소 v6검사하기
+
+regexr.com
+
+------------------
+aria-role="button"
+button태그에는 사용할 필요없는데
+스크린리더가 버튼컨트롤임을 인식하게 해주는 속성입니다.
+웹접근성
+
+aria-label="설명문구"
+<h1 role="button">버튼</h1>
+
+<input type="hidden" value="데이터">
+숨김처리
+
+시맨틱태그
+의미를 가지는 태그
+
+header
+section
+footer
+nav
+article
+hgroup -> 제목태그 그룹화
+aside
+figure 이미지
+figurecaption
+
+ul>li*5>a[href=#]{menu$}
+emmet 기능
+
+Number()
+Parselnt()
+
+줄바꿈태그
+<br>break
+<nobr>
+<wbr> word break
+
+<nobr><-><wbr>
+
+<svg>
+scaler vetor graphic
+벡터그래픽
+

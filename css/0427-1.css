@@ -1,0 +1,107 @@
+.top{background:black;
+color: white;
+font-style: italic;
+text-align: center;
+padding:5px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* 세로중앙정렬 */
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.nav h1{
+    font-size: 1.5em;
+}
+
+.nav i {
+    font-size: 1.5 em;
+}
+
+.bottom{
+    border-bottom: 1px solid lightgray;
+    position:relative;
+    text-align: center;
+}
+.bottom i{position:absolute;
+left:5px;
+top:8px;
+}
+.bottom h2{font-size:1em;
+padding:5px;}
+
+/*----------------------------------------------------------*/
+
+/* 박스가운데정렬하기 */ 
+/* div.box{
+    width:400px;               
+    background-color:pink;      
+    height:200px;                  
+    width background height와 분리해야함.
+    position:relative;
+    display:flex;
+    justify-items:center; 세로축을 기준으로 정렬
+    align-items:center;
+}
+
+.box p{
+    width:60%;
+    background-color: orangered;
+    height:40%;
+    position: absolute;
+    left:50%; top:50%;
+    transform: translate(-50%, -50%);  display flex를 써도가능
+    line-height: calc(200px * 0.4);
+}
+
+.center{
+    margin:auto;
+}
+
+.tac{text-align: center;}
+html,body{position:relative;}
+   .box{
+    position: absolute;
+    left:50%; top:50%;
+    transform: translate(-50%, -50%);
+    margin:0;
+}
+.vhcenter{    
+    position: absolute;
+    left:50%; top:50%;
+    transform: translate(-50%, -50%);
+    margin:0;} */
+
+.top1{
+    margin:10px;
+    display:flex;
+    border-bottom: 1px solid lightgray;
+}
+
+div i {
+    font-size:25px;
+}
+a {font-weight:bold;
+font-size:14px;
+float:left;
+margin-left:5px;
+}
+
+ul a:hover{
+    color:blue;
+    font-weight:bold
+}
+ul a::after{
+    content:'';
+    display:block;
+    width:0px;
+    color:blue;
+}
+
+div.right{margin-left:280px;}
+
+div.nav{border-bottom:1px solid black;}
