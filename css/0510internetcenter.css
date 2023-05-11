@@ -88,3 +88,11 @@ button {
     font-size: 2rem;
     color: white;
 }
+
+.text{
+    text-align:center;
+}
+
+.sevice{
+    background:gray;
+}
