@@ -1,0 +1,157 @@
+.multi {
+    /* column-count: 3; */
+    padding: 10px;
+    column-gap: 30px;
+    column-rule-color: red;
+    column-rule-style: solid;
+    /*세줄*/
+    column-rule-width: 5px;
+    column-rule: 5px dotted blue;
+    /*한줄*/
+    column-width: 120px;
+}
+
+
+.multi:hover p {
+    column-span: all;
+    /*하나로만듬*/
+}
+
+.charts {
+    display: flex;
+    justify-content: center;
+
+}
+
+svg {
+    width: 220px;
+    height: 220px;
+}
+
+svg circle {
+    fill: grey;
+    /*면색*/
+    stroke: gold;
+    /*선색*/
+    stroke-width: 20;
+    stroke-dasharray: 630;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+}
+
+@keyframes line1 {
+    from {
+        stroke-dashoffset: 630;
+    }
+
+    to {
+        stroke-dashoffset: 130;
+    }
+}
+
+.chart1 circle {
+    animation: line1 3s forwards;
+}
+
+/*forwards는 애니메이션 끝에서 정지*/
+
+@keyframes line2 {
+    from {
+        stroke-dashoffset: 630;
+    }
+
+    to {
+        stroke-dashoffset: 200;
+    }
+}
+
+.chart:nth-child(2) circle {
+    animation: line2 1s forwards;
+    stroke: red;
+}
+
+@keyframes line3 {
+    from {
+        stroke-dashoffset: 630;
+    }
+
+    to {
+        stroke-dashoffset: 50;
+    }
+}
+
+.chart:nth-child(3) circle {
+    animation: line3 5s alternate infinite;
+    stroke: blue;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+ul>li>a {
+    padding: 10px;
+    display: block;
+}
+
+li a span:nth-child(2) {
+    display: none;
+}
+
+li a span:nth-child(1) {
+    display: block;
+}
+
+li a:hover span:nth-child(2) {
+    display: block;
+}
+
+li a:hover span:nth-child(1) {
+    display: none;
+}
+
+ul li:hover {
+    background: grey;
+}
+
+ul li {
+    width: 100px;
+    background: pink;
+}
+
+
+
+ol {
+    display: flex;
+}
+
+ol li {
+    width: 100px;
+    display: block;
+    border: 1px solid;
+    text-align: center;
+}
+
+ol li a img:nth-child(2) {
+    display: none;
+}
+
+ol li:hover a img:nth-child(2) {
+    display: block;
+}
+
+ol li:hover a img:nth-child(1) {
+    display: none;
+}
+
+img {
+    width: 100%;
+}
+

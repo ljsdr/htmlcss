@@ -1,0 +1,73 @@
+header {
+    width: 1000px;
+    border: 1px solid;
+    background: grey;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    transition: 1s;
+}
+
+div li {
+    background: beige;
+    position: relative;
+    transition: 1s;
+}
+
+div li:hover {
+    background: blue;
+    transition: 1s;
+}
+
+div>li>a {
+    display: block;
+    margin: 10px;
+    transition: 1s;
+}
+
+li ol {
+    display: none;
+    background: red;
+    position: absolute;
+    transition: 1s;
+}
+
+div:hover li ol {
+    display: block;
+    transition: 1s;
+}
+
+div>li>ol {
+    width: 100%;
+    transition: 1s;
+
+}
+
+.mo {
+    border: 1px solid black;
+    position: relative;
+    left: 100px;
+    top: 200px;
+    padding: 100px;
+    background: blue;
+}
+
+mo>a {
+    color: white;
+}
+
+.modalbox {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+}
+
+.modalbox:target {
+    display: block;
+}
